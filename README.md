@@ -1,5 +1,7 @@
 # SAR Tracker
 
+[![CI](https://github.com/osenaattori/sar-tracker/actions/workflows/ci.yml/badge.svg)](https://github.com/osenaattori/sar-tracker/actions/workflows/ci.yml)
+
 A serverless, event-driven pipeline that **tracks new scenes in ICEYE's public SAR (radar satellite) open dataset**, plus an iPhone app that shows them on a map with image previews, SAR videos and live pipeline health.
 
 Personal learning project (IT / DevOps / cloud). Not affiliated with or endorsed by ICEYE.
@@ -21,7 +23,7 @@ CloudWatch alarms + dashboard + budget ──► email
 | Security | Private bucket behind CloudFront Origin Access Control, TLS-only bucket policy, least-privilege IAM (two objects, one queue), encryption at rest, security headers |
 | Observability | Custom CloudWatch metric (`NewScenes`) via Embedded Metric Format, dashboard, alarms for DLQ / errors / "pipeline silent" |
 | Cost control | Serverless, ARM Lambda, PriceClass_100 CDN, log retention, AWS Budget alert (≈ $0–1/month) |
-| IaC + CI | Everything in Terraform; GitHub Actions runs unit tests, `terraform fmt/validate`, Trivy IaC scan and an iOS build |
+| IaC + CI | Everything in Terraform; GitHub Actions runs unit tests, `terraform fmt/validate`, a SHA-pinned Trivy IaC scan (accepted risks documented in `infra/.trivyignore`) and an iOS build |
 
 ## Repo layout
 
