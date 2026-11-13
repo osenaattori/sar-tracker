@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Allow plain HTTP only to local-network hosts (the Mac running backend/local/server.py).
+	     Everything on the internet still requires HTTPS. -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>SAR Tracker reads the scene feed from the tracker server running on your Mac.</string>
+	<!-- Set at build time: SAR_DEFAULT_FEED_URL=http://<mac-ip>:8080/feed.json -->
+	<key>SARDefaultFeedURL</key>
+	<string>$(SAR_DEFAULT_FEED_URL)</string>
+</dict>
+</plist>

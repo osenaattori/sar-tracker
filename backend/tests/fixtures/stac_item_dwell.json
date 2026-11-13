@@ -1,0 +1,240 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://sar.iceye.com/schema/product-spec/v0.2.2/schema.json"
+  ],
+  "id": "ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF",
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -60.586749966043186,
+          -70.98465138266513
+        ],
+        [
+          -60.66197205036846,
+          -71.02217118912651
+        ],
+        [
+          -60.54658887927895,
+          -71.04665946213032
+        ],
+        [
+          -60.47149281334747,
+          -71.00909324196928
+        ],
+        [
+          -60.586749966043186,
+          -70.98465138266513
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -60.66197205036846,
+    -71.04665946213032,
+    -60.47149281334747,
+    -70.98465138266513
+  ],
+  "properties": {
+    "datetime": "2025-11-10T12:44:42.038Z",
+    "created": "2025-12-18T10:29:15Z",
+    "start_datetime": "2025-11-10T12:44:28.061Z",
+    "end_datetime": "2025-11-10T12:44:56.016Z",
+    "platform": "ICEYE-X42",
+    "constellation": "ICEYE",
+    "sar:instrument_mode": "spotlight",
+    "sar:frequency_band": "X",
+    "sar:center_frequency": 9.6,
+    "sar:polarizations": [
+      "VV"
+    ],
+    "sar:observation_direction": "right",
+    "sat:orbit_state": "descending",
+    "view:off_nadir": 22.643083,
+    "view:incidence_angle": 24.989546,
+    "processing:software": {
+      "forge": "v1.0.1",
+      "processor": "ICEYE_I_1.1.4"
+    },
+    "proj:code": "EPSG:4326",
+    "proj:shape": [
+      20000,
+      20000
+    ],
+    "proj:centroid": {
+      "lat": -71.01564859335275,
+      "lon": -60.56675713148544
+    },
+    "raster:bands": [
+      {
+        "data_type": "ui16",
+        "bits_per_sample": 16
+      }
+    ]
+  },
+  "links": [
+    {
+      "rel": "collection",
+      "href": "../../../collections/iceye-sar.json",
+      "type": "application/json",
+      "title": "ICEYE Open SAR Data Collection"
+    },
+    {
+      "rel": "root",
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/catalog.json",
+      "type": "application/json",
+      "title": "ICEYE SAR Open Data"
+    },
+    {
+      "rel": "parent",
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/collections/iceye-sar.json",
+      "type": "application/json",
+      "title": "ICEYE Open SAR Data Collection"
+    },
+    {
+      "rel": "thumbnail",
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_CSI.png",
+      "type": "image/png",
+      "title": "CSI PNG"
+    },
+    {
+      "rel": "thumbnail",
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_VID.gif",
+      "type": "image/gif",
+      "title": "VID GIF"
+    },
+    {
+      "rel": "thumbnail",
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_THM.png",
+      "type": "image/png",
+      "title": "Thumbnail"
+    },
+    {
+      "rel": "self",
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/stac-items/2025/11/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF.json",
+      "type": "application/geo+json",
+      "title": "ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://geojson.io/#data=data:text/x-url,https://iceye-open-data-catalog.s3.amazonaws.com/stac-items/2025/11/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF.json",
+      "type": "text/html",
+      "title": "View footprint in geojson.io"
+    }
+  ],
+  "assets": {
+    "csi-json": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_CSI.json",
+      "type": "application/geo+json",
+      "roles": [
+        "metadata"
+      ],
+      "title": "CSI metadata"
+    },
+    "csi-cog": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_CSI.tif",
+      "type": "application/x-geotiff",
+      "roles": [
+        "data"
+      ],
+      "title": "CSI product"
+    },
+    "grd-json": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_GRD.json",
+      "type": "application/geo+json",
+      "roles": [
+        "metadata"
+      ],
+      "title": "GRD metadata"
+    },
+    "grd-cog": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_GRD.tif",
+      "type": "application/x-geotiff",
+      "roles": [
+        "data"
+      ],
+      "title": "GRD product"
+    },
+    "qlk-json": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_QLK.json",
+      "type": "application/geo+json",
+      "roles": [
+        "metadata"
+      ],
+      "title": "Quicklook Metadata"
+    },
+    "qlk-kml": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_QLK.kml",
+      "type": "application/vnd.google-earth.kml+xml",
+      "roles": [
+        "overview"
+      ],
+      "title": "Quicklook KML"
+    },
+    "qlk-cog": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_QLK.tif",
+      "type": "application/x-geotiff",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Quicklook COG"
+    },
+    "slc-json": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_SLC.json",
+      "type": "application/geo+json",
+      "roles": [
+        "metadata"
+      ],
+      "title": "SLC metadata"
+    },
+    "slc-cog": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_SLC.tif",
+      "type": "application/x-geotiff",
+      "roles": [
+        "data"
+      ],
+      "title": "SLC product"
+    },
+    "vid-json": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_VID.json",
+      "type": "application/geo+json",
+      "roles": [
+        "metadata"
+      ],
+      "title": "VID metadata"
+    },
+    "vid-mp4": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_VID.mp4",
+      "type": "video/mp4",
+      "roles": [
+        "overview"
+      ],
+      "title": "VID MP4"
+    },
+    "vid-cog": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_VID.tif",
+      "type": "application/x-geotiff",
+      "roles": [
+        "data"
+      ],
+      "title": "VID product"
+    },
+    "graphic": {
+      "href": "https://iceye-open-data-catalog.s3.amazonaws.com/data/dwell-fine/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF/ICEYE_4EKGVZ_20251110T124428Z_7004635_X42_SLEDF_THM.png",
+      "type": "image/png",
+      "roles": [
+        "graphic"
+      ],
+      "title": "Thumbnail"
+    }
+  }
+}

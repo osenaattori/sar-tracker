@@ -1,0 +1,21 @@
+# Terraform
+infra/.terraform/
+infra/build/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!example.tfvars
+
+# Xcode
+xcuserdata/
+DerivedData/
+*.xcuserstate
+
+# Python
+__pycache__/
+*.pyc
+
+.DS_Store
+
+# Local server data
+backend/local/data/

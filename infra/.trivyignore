@@ -1,0 +1,14 @@
+# Accepted risks for the Trivy IaC scan (reviewed 2026-11-13).
+# Each entry needs a reason; revisit if the threat model or data changes.
+
+# AWS-0011: CloudFront without WAF.
+# The distribution serves two small, public, read-only JSON files (GET/HEAD only,
+# cached at the edge). A WAF web ACL costs >= ~$5-8/month, which outweighs the risk
+# for this project. Mitigations: private bucket via OAC, TLS 1.2+, AWS Shield Standard,
+# budget alarm. Add WAF with a rate-based rule if the feed ever serves private data.
+AVD-AWS-0011
+
+# AWS-0132: S3 encrypted with SSE-S3 (AES-256) instead of a customer-managed KMS key.
+# The bucket only holds a feed derived from ICEYE's public CC BY 4.0 open data, so
+# key-level access control adds no protection; a CMK costs $1/month plus requests.
+AVD-AWS-0132
